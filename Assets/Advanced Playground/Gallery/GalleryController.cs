@@ -86,9 +86,10 @@ public class GalleryController : MonoBehaviour
     public NFTs_OwnedByAnAccount.Chains GetChainFromDropDownSelectAccount()
     {
         if (galleryNetworkDropdownSelect.value == 0)
-            return NFTs_OwnedByAnAccount.Chains.ethereum;
-        else if(galleryNetworkDropdownSelect.value == 1)
             return NFTs_OwnedByAnAccount.Chains.polygon;
+        else if(galleryNetworkDropdownSelect.value == 1)
+            
+            return NFTs_OwnedByAnAccount.Chains.ethereum;
         else 
             return NFTs_OwnedByAnAccount.Chains.goerli;
     }
